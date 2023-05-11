@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/calc.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <header>
+        <h3>Calculadora de IMC</h3>
+    </header>
+    <form>
+        <div class="linha">
+            <label for="sexo"> Qual o seu sexo?</label>
+            <select id="sexo">
+                <option value="Nada"></option>
+                <option value="Feminino">Feminino</option>
+                <option value="Masculino">Masculino</option>
+            </select>
+        </div>
+        <div class="linha">
+            <label for="altura">Qual sua altura?</label>
+            <input type="text" id="altura">
+        </div>
+        <div class="linha">
+            <label for="peso">Qual seu peso?</label>
+            <input type="text" id="peso">
+        </div>
+        <button id="btn">
+            <i class="fa fa-calculator"></i>
+            Calcular IMC
+        </button>
+    </form>
+    <div id="resultado"></div>
+    <div id="imagem">
+        <img id="imagem">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
